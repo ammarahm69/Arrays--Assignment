@@ -1,0 +1,35 @@
+body {
+    background-color: firebrick;
+}
+
+p {
+    text-align: center;
+    color: #fff;
+    font: 1.3em sans-serif;
+}
+
+.student {
+    text-align: center;
+    color: #4deeff;
+    font-size: 1.9em;
+}
+
+.edu {
+    color: #fff;
+    /* text-align: center; */
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.score{
+    color: #fff;
+    text-align: center;
+    margin-top: 2rem;
+    position: relative;
+    top: 2rem;
+}
+.fff{
+    color: #fff;
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'circular'
+}

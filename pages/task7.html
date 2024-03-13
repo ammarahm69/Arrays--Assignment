@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program 7</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <p> Write a program to store 3 student names in an array.Take
+        another array to store score of these three students.
+        Assume that total marks are 500 for each student
+    </p>
+
+    <script>
+        var studentName = ['Bob', 'John', 'Michael', 'Harry'];
+        var score = [453, 286, 349, 432];
+        document.write(`<h1 class="score">Score of ${studentName[1]} is ${score[0]}. Percentage : ${Math.round((score[0] / 500) * 100)} %` + '<br>');
+            document.write(`<h1 class="score">Score of ${studentName[3]} is ${score[3]}. Percentage : ${Math.round((score[3] / 500) * 100)} %` + '<br>');
+                document.write(`<h1 class="score">Score of ${studentName[2]} is ${score[2]}. Percentage : ${Math.round((score[2] / 500) * 100)} %` + '<br>');
+        document.write(`<h1 class="score">Score of ${studentName[0]} is ${score[1]}. Percentage : ${Math.round((score[1] / 500) * 100)} %` + '<br>');
+
+    </script>
+</body>
+
+</html>

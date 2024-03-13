@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program 8</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <!-- Initialize an array with color names. Display the array
+elements in your browser. -->
+    <script>
+        var colorNames = [' red ', ' green ', ' blue '];
+        var addColour = prompt("What color do you want to add first?");
+        var lastAddedColor = prompt("What color do you want at the last?");
+        document.write(`<h2 class="fff"> Orignal Array:` + '<br>' + colorNames + '<br>' + '<br>')
+
+        // Add color on First
+        colorNames.unshift(addColour);
+        document.write(`${addColour} is added to an array` + '<br>');
+        document.write(`${colorNames}` + '<br>'  + '<br>');
+
+        //Add color on last
+        colorNames.push(lastAddedColor);
+        document.write(`${lastAddedColor} is added at the last of an array` + '<br>');
+        document.write(`${colorNames}`+ '<br>'  + '<br>');
+
+        //Add two more color in the begining
+        var oneAdd= prompt("Add color in the again");
+        var twoAdd = prompt("Add one more color again");
+
+        colorNames.unshift(oneAdd);
+        colorNames.unshift(twoAdd);
+        document.write(`${oneAdd} and ${twoAdd} color is added at the beginning`+'<br>');
+        document.write(`${colorNames}`+ '<br>'  + '<br>');
+
+        //Delete the first colour in the array
+
+       document.write("Removes the first color in above array" + '<br>');
+       colorNames.shift(colorNames);
+       document.write(`${twoAdd} is removed from an array`+ '<br>');
+       document.write(`${colorNames}`+ '<br>' + '<br>');
+
+
+       // do splice method 
+       var indextoAdd = +prompt("At which index do you want to add color");
+       var indexColorName = prompt("Which color  you want to add");
+       var  indexToDelete = +prompt("At which index you want to delete the color");
+       colorNames.splice(indexToDelete , indexToDelete , indexColorName);
+
+       document.write(`Remaing color will be ${colorNames}`);
+
+
+    </script>
+</body>
+
+</html>
